@@ -455,3 +455,81 @@ let libros = [
 
 
 
+
+
+
+let pilaLibros = [];
+
+function agregarLibro() {
+  let titulo = prompt("Ingrese el título del libro:");
+  let autor = prompt("Ingrese el autor del libro:");
+  let genero = prompt("Ingrese el género del libro:");
+
+  let nuevoLibro = {
+      titulo: titulo,
+      autor: autor,
+      genero: genero
+  };
+
+  pilaLibros.push(nuevoLibro);
+  console.log(`Se ha agregado el libro "${titulo}" a la pila.`);
+}
+
+function mostrarLibro() {
+  if (pilaLibros.length > 0) {
+    let libroAMostrar = pilaLibros[pilaLibros.length - 1]; 
+    console.log("Detalles del libro:");
+    console.log(`Título: ${libroAMostrar.titulo}`);
+    console.log(`Autor: ${libroAMostrar.autor}`);
+    console.log(`Género: ${libroAMostrar.genero}`);
+
+} else {
+    console.log("No hay libros para mostrar en la pila.");
+}
+}
+
+function quitarLibro() {
+
+    if (pilaLibros.length > 0) {
+      let libroQuitado = pilaLibros.pop();
+      console.log(`Se ha quitado el libro "${libroQuitado.titulo}" de la pila.`);
+  } else {
+      console.log("No hay libros para quitar en la pila.");
+  }
+}
+
+
+function mostrarMenu() {
+    console.log("----- Menú de Libros -----");
+    console.log("1. Agregar libro");
+    console.log("2. Mostrar libro");
+    console.log("3. Quitar libro");
+    console.log("4. Salir");
+}
+
+let opcion = 0;
+
+do {
+    mostrarMenu();
+    opcion = parseInt(prompt("Ingrese una opción:"));
+
+    switch (opcion) {
+        case 1:
+            agregarLibro();
+            break;
+        case 2:
+            mostrarLibro();
+            break;
+        case 3:
+            quitarLibro();
+            break;
+        case 4:
+            console.log("Saliendo del programa...");
+            break;
+        default:
+            console.log("Opción no válida. Por favor, ingrese una opción válida.");
+    }
+} while (opcion !== 4);
+
+
+
