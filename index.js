@@ -35,7 +35,7 @@ let libros = [
       estado: "Usado",
       ubicacion: "Librería Z, Ciudad W",
       fecha_publicacion: "30/05/1967",
-      editorial: "Sudamericana",
+      editorial: "Gallimard",
       paginas: 432,
       dimensiones: {
         ancho: 15,
@@ -52,14 +52,14 @@ let libros = [
       autor: "Dios (inspiración divina)",
       genero: "Religioso",
       idioma: "Varios idiomas",
-      precio: 0, 
+      precio: 22, 
       formato: "Libro físico o digital",
       isbn: "No tiene ISBN",
       descripcion: "La Biblia es una colección de textos sagrados para el judaísmo y el cristianismo, que incluye escrituras consideradas divinas.",
       estado: "Nuevo",
       ubicacion: "Iglesias, librerías religiosas",
       fecha_publicacion: "Siglos antes de Cristo (para el Antiguo Testamento) y siglo I (para el Nuevo Testamento)",
-      editorial: "No aplica",
+      editorial: "Gallimard",
       paginas: "Varía dependiendo de la edición",
       dimensiones: {
         ancho: "Varía",
@@ -83,7 +83,7 @@ let libros = [
         estado: "Nuevo",
         ubicacion: "Librerías",
         fecha_publicacion: "Siglo VIII a.C.",
-        editorial: "Varía dependiendo de la edición",
+        editorial: "Gallimard",
         paginas: "Varía dependiendo de la edición",
         dimensiones: {
           ancho: "Varía",
@@ -107,7 +107,7 @@ let libros = [
         estado: "Nuevo",
         ubicacion: "Librerías",
         fecha_publicacion: "1605 y 1615",
-        editorial: "Varía dependiendo de la edición",
+        editorial: "Gallimard",
         paginas: "Varía dependiendo de la edición",
         dimensiones: {
           ancho: "Varía",
@@ -131,7 +131,7 @@ let libros = [
         estado: "Nuevo",
         ubicacion: "Librerías",
         fecha_publicacion: "1859",
-        editorial: "Varía dependiendo de la edición",
+        editorial: "Sudamericana",
         paginas: "Varía dependiendo de la edición",
         dimensiones: {
           ancho: "Varía",
@@ -148,14 +148,14 @@ let libros = [
         autor: "J.R.R. Tolkien",
         genero: "Fantasía épica",
         idioma: "Inglés",
-        precio: 0, // Precio puede variar dependiendo de la edición
+        precio: 30, 
         formato: "Libro físico o digital",
         isbn: "Varía dependiendo de la edición",
         descripcion: "La primera parte de la trilogía narra la formación de la Comunidad del Anillo y su viaje para destruir el Anillo Único.",
         estado: "Nuevo",
         ubicacion: "Librerías",
         fecha_publicacion: "1954",
-        editorial: "Varía dependiendo de la edición",
+        editorial: "Sudamericana",
         paginas: "Varía dependiendo de la edición",
         dimensiones: {
           ancho: "Varía",
@@ -172,14 +172,14 @@ let libros = [
         autor: "J.R.R. Tolkien",
         genero: "Fantasía épica",
         idioma: "Inglés",
-        precio: 0, // Precio puede variar dependiendo de la edición
+        precio: 0, 
         formato: "Libro físico o digital",
         isbn: "Varía dependiendo de la edición",
         descripcion: "La segunda parte de la trilogía sigue las aventuras de los miembros de la Comunidad del Anillo tras la separación en la primera parte.",
         estado: "Nuevo",
         ubicacion: "Librerías",
         fecha_publicacion: "1954",
-        editorial: "Varía dependiendo de la edición",
+        editorial: "Sudamericana",
         paginas: "Varía dependiendo de la edición",
         dimensiones: {
           ancho: "Varía",
@@ -196,14 +196,14 @@ let libros = [
         autor: "J.R.R. Tolkien",
         genero: "Fantasía épica",
         idioma: "Inglés",
-        precio: 0, // Precio puede variar dependiendo de la edición
+        precio: 0, 
         formato: "Libro físico o digital",
         isbn: "Varía dependiendo de la edición",
         descripcion: "La tercera parte de la trilogía narra la culminación de la guerra del Anillo y el destino de los personajes principales.",
         estado: "Nuevo",
         ubicacion: "Librerías",
         fecha_publicacion: "1955",
-        editorial: "Varía dependiendo de la edición",
+        editorial: "Sudamericana",
         paginas: "Varía dependiendo de la edición",
         dimensiones: {
           ancho: "Varía",
@@ -220,14 +220,14 @@ let libros = [
         autor: "Mercedes Ron",
         genero: "Romance juvenil",
         idioma: "Español",
-        precio: 0, // Precio puede variar dependiendo de la edición
+        precio: 0, 
         formato: "Libro físico o digital",
         isbn: "Varía dependiendo de la edición",
         descripcion: "La primera parte de la trilogía narra la historia de Abril, una joven que se enamora de Aarón, un chico problemático con un pasado oscuro.",
         estado: "Nuevo",
         ubicacion: "Librerías",
         fecha_publicacion: "2016",
-        editorial: "Montena",
+        editorial: "Sudamericana",
         paginas: "Varía dependiendo de la edición",
         dimensiones: {
           ancho: "Varía",
@@ -244,7 +244,7 @@ let libros = [
         autor: "Mercedes Ron",
         genero: "Romance juvenil",
         idioma: "Español",
-        precio: 0, // Precio puede variar dependiendo de la edición
+        precio: 0, 
         formato: "Libro físico o digital",
         isbn: "Varía dependiendo de la edición",
         descripcion: "La segunda parte de la trilogía continúa la historia de Abril y Aarón, enfrentando nuevos desafíos y revelaciones sobre su relación.",
@@ -268,7 +268,7 @@ let libros = [
         autor: "Mercedes Ron",
         genero: "Romance juvenil",
         idioma: "Español",
-        precio: 0, // Precio puede variar dependiendo de la edición
+        precio: 0, 
         formato: "Libro físico o digital",
         isbn: "Varía dependiendo de la edición",
         descripcion: "La tercera parte de la trilogía concluye la historia de Abril y Aarón, mostrando cómo enfrentan su destino y sus sentimientos.",
@@ -293,14 +293,14 @@ let libros = [
         autor: "Suzanne Collins",
         genero: "Ciencia ficción, aventura",
         idioma: "Español",
-        precio: 0, // Precio puede variar dependiendo de la edición
+        precio: 0, 
         formato: "Libro físico o digital",
         isbn: "Varía dependiendo de la edición",
         descripcion: "En la secuela, Katniss y Peeta se enfrentan a la ira del Capitolio después de ganar los Juegos del Hambre.",
         estado: "Nuevo",
         ubicacion: "Librerías",
         fecha_publicacion: "2009",
-        editorial: "Molino",
+        editorial: "Montena",
         paginas: "Varía dependiendo de la edición",
         dimensiones: {
           ancho: "Varía",
@@ -317,14 +317,14 @@ let libros = [
         autor: "Suzanne Collins",
         genero: "Ciencia ficción, aventura",
         idioma: "Español",
-        precio: 0, // Precio puede variar dependiendo de la edición
+        precio: 0, 
         formato: "Libro físico o digital",
         isbn: "Varía dependiendo de la edición",
         descripcion: "En la conclusión de la trilogía, Katniss se convierte en el símbolo de la rebelión contra el Capitolio.",
         estado: "Nuevo",
         ubicacion: "Librerías",
         fecha_publicacion: "2010",
-        editorial: "Molino",
+        editorial: "Montena",
         paginas: "Varía dependiendo de la edición",
         dimensiones: {
           ancho: "Varía",
@@ -341,14 +341,14 @@ let libros = [
         autor: "Suzanne Collins",
         genero: "Ciencia ficción, aventura",
         idioma: "Español",
-        precio: 0, // Precio puede variar dependiendo de la edición
+        precio: 20, 
         formato: "Libro físico o digital",
         isbn: "Varía dependiendo de la edición",
         descripcion: "Precuela que narra la historia del presidente Snow y los primeros Juegos del Hambre.",
         estado: "Nuevo",
         ubicacion: "Librerías",
         fecha_publicacion: "2020",
-        editorial: "Molino",
+        editorial: "Montena",
         paginas: "Varía dependiendo de la edición",
         dimensiones: {
           ancho: "Varía",
@@ -372,7 +372,7 @@ let libros = [
         estado: "Nuevo",
         ubicacion: "Librería X",
         fecha_publicacion: "2018",
-        editorial: "Hodder Children's Books",
+        editorial: "Montena",
         paginas: 288,
         dimensiones: "5.1 x 0.8 x 7.8 pulgadas",
         peso: "9.6 onzas"
@@ -436,29 +436,97 @@ let libros = [
 
 
   libros.push(heartstopper4);
-  console.log(libros)
+ // console.log(libros)
   
 
 
 
   libros.pop(5);
-  console.log(libros)
+  //console.log(libros)
 
 
 
 
   libros.forEach((libro, index) => {
-    console.log(`Libro ${index + 1}: ${libro.titulo}`);
+ //   console.log(`Libro ${index + 1}: ${libro.titulo}`);
 });
 
 
+const librosListados1 = libros.map(libro => {
+  return {
+   Titulo: libro.titulo,
+   Genero: libro.genero,
+   Editorial: libro.editorial, 
+   isbn: libro.isbn }; });
+
+   const librosListados2 = libros.map(libro => {
+    return {
+     Titulo: libro.titulo,
+     Autor: libro.autor,
+     Editorial: libro.editorial, 
+     Dimensiones: libro.dimensiones }; });
+
+    const librosListados3 = libros.map(libro => {
+    return {
+     Titulo: libro.titulo,
+     Estado: libro.estado,
+     Editorial: libro.editorial, 
+     Peso: libro.peso }; });
+
+    const librosListados4 = libros.map(libro => {
+    return {
+     Titulo: libro.titulo,
+     Ubicacion: libro.ubicacion,
+     Editorial: libro.editorial, 
+     FechaPublicacion: libro.precio }; });
+
+    const librosListados5 = libros.map(libro => {
+    return {
+     Titulo: libro.titulo,
+     Peso: libro.peso,
+   Editorial: libro.editorial, 
+     Dimensiones: libro.dimensiones }; });
+
+    const librosListados6 = libros.map(libro => {
+    return {
+     Titulo: libro.titulo,
+     Estado: libro.estado,
+     Editorial: libro.editorial, 
+     Ubicacion: libro.ubicacion }; });
+
+const librosListados7 = libros.map(libro => {
+return {
+Titulo: libro.titulo,
+Descripcion: libro.descripcion,
+Editorial: libro.editorial, 
+Formato: libro.formato }; });
+
+const librosListados8 = libros.map(libro => {
+return {
+Titulo: libro.titulo,
+isbn: libro.isbn,
+Editorial: libro.editorial, 
+Precio: libro.precio }; });
+
+const librosListados9 = libros.map(libro => {
+return {
+Titulo: libro.titulo,
+Genero: libro.genero,
+Editorial: libro.editorial, 
+Descripcion: libro.descripcion }; });
+
+  const librosListados10= libros.map(libro => {
+  return {
+    Titulo: libro.titulo,
+    Idioma: libro.idioma,
+    Editorial: libro.editorial, 
+   Paginas: libro.paginas }; });
+   
 
 
 
 
-
-
-let pilaLibros = [];
+/*let pilaLibros = [];
 
 function agregarLibro() {
   let titulo = prompt("Ingrese el título del libro:");
@@ -497,6 +565,14 @@ function quitarLibro() {
       console.log("No hay libros para quitar en la pila.");
   }
 }
+function listarlibro() {
+  const librosListados = libros.map(libro => {
+     return {
+      Titulo: libro.titulo,
+      Autor: libro.autor,
+      Editorial: libro.editorial, 
+      Precio: libro.precio }; });
+}
 
 
 function mostrarMenu() {
@@ -504,7 +580,8 @@ function mostrarMenu() {
     console.log("1. Agregar libro");
     console.log("2. Mostrar libro");
     console.log("3. Quitar libro");
-    console.log("4. Salir");
+    console.log("4. Listar libro");
+    console.log("5. Salir");
 }
 
 let opcion = 0;
@@ -523,13 +600,16 @@ do {
         case 3:
             quitarLibro();
             break;
-        case 4:
+            case 4:
+              listarlibro();
+              break;
+        case 5:
             console.log("Saliendo del programa...");
             break;
         default:
             console.log("Opción no válida. Por favor, ingrese una opción válida.");
     }
-} while (opcion !== 4);
+} while (opcion !== 4); */
 
 
 
