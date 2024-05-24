@@ -60,7 +60,7 @@ let libros = [
       ubicacion: "Iglesias, librerías religiosas",
       fecha_publicacion: "Siglos antes de Cristo (para el Antiguo Testamento) y siglo I (para el Nuevo Testamento)",
       editorial: "Gallimard",
-      paginas: "Varía dependiendo de la edición",
+      paginas:234,
       dimensiones: {
         ancho: "Varía",
         profundidad: "Varía",
@@ -84,7 +84,7 @@ let libros = [
         ubicacion: "Librerías",
         fecha_publicacion: "Siglo VIII a.C.",
         editorial: "Gallimard",
-        paginas: "Varía dependiendo de la edición",
+        paginas:760,
         dimensiones: {
           ancho: "Varía",
           profundidad: "Varía",
@@ -108,7 +108,7 @@ let libros = [
         ubicacion: "Librerías",
         fecha_publicacion: "1605 y 1615",
         editorial: "Gallimard",
-        paginas: "Varía dependiendo de la edición",
+        paginas:468,
         dimensiones: {
           ancho: "Varía",
           profundidad: "Varía",
@@ -132,7 +132,7 @@ let libros = [
         ubicacion: "Librerías",
         fecha_publicacion: "1859",
         editorial: "Sudamericana",
-        paginas: "Varía dependiendo de la edición",
+        paginas:100,
         dimensiones: {
           ancho: "Varía",
           profundidad: "Varía",
@@ -156,7 +156,7 @@ let libros = [
         ubicacion: "Librerías",
         fecha_publicacion: "1954",
         editorial: "Sudamericana",
-        paginas: "Varía dependiendo de la edición",
+        paginas:723,
         dimensiones: {
           ancho: "Varía",
           profundidad: "Varía",
@@ -180,7 +180,7 @@ let libros = [
         ubicacion: "Librerías",
         fecha_publicacion: "1954",
         editorial: "Sudamericana",
-        paginas: "Varía dependiendo de la edición",
+        paginas:418,
         dimensiones: {
           ancho: "Varía",
           profundidad: "Varía",
@@ -204,7 +204,7 @@ let libros = [
         ubicacion: "Librerías",
         fecha_publicacion: "1955",
         editorial: "Sudamericana",
-        paginas: "Varía dependiendo de la edición",
+        paginas:325,
         dimensiones: {
           ancho: "Varía",
           profundidad: "Varía",
@@ -228,7 +228,7 @@ let libros = [
         ubicacion: "Librerías",
         fecha_publicacion: "2016",
         editorial: "Sudamericana",
-        paginas: "Varía dependiendo de la edición",
+        paginas:123,
         dimensiones: {
           ancho: "Varía",
           profundidad: "Varía",
@@ -252,7 +252,7 @@ let libros = [
         ubicacion: "Librerías",
         fecha_publicacion: "2016",
         editorial: "Montena",
-        paginas: "Varía dependiendo de la edición",
+        paginas:453,
         dimensiones: {
           ancho: "Varía",
           profundidad: "Varía",
@@ -276,7 +276,7 @@ let libros = [
         ubicacion: "Librerías",
         fecha_publicacion: "2017",
         editorial: "Montena",
-        paginas: "Varía dependiendo de la edición",
+        paginas:987,
         dimensiones: {
           ancho: "Varía",
           profundidad: "Varía",
@@ -301,7 +301,7 @@ let libros = [
         ubicacion: "Librerías",
         fecha_publicacion: "2009",
         editorial: "Montena",
-        paginas: "Varía dependiendo de la edición",
+        paginas:631,
         dimensiones: {
           ancho: "Varía",
           profundidad: "Varía",
@@ -325,7 +325,7 @@ let libros = [
         ubicacion: "Librerías",
         fecha_publicacion: "2010",
         editorial: "Montena",
-        paginas: "Varía dependiendo de la edición",
+        paginas:567,
         dimensiones: {
           ancho: "Varía",
           profundidad: "Varía",
@@ -349,7 +349,7 @@ let libros = [
         ubicacion: "Librerías",
         fecha_publicacion: "2020",
         editorial: "Montena",
-        paginas: "Varía dependiendo de la edición",
+        paginas:320,
         dimensiones: {
           ancho: "Varía",
           profundidad: "Varía",
@@ -529,14 +529,30 @@ Descripcion: libro.descripcion }; });
     precio: libro.precio,
     descuento: libro.precio * 0.2
   }));
-   console.log(librosConDescuento);
+  // console.log(librosConDescuento);
    
+  const librosMasCaros = libros.filter(libro => libro.precio > 50);
+
+   //console.table(librosMasCaros);
+
+
+const LibroMasPaginas=libros.map(libro=>{
+      return {
+        titulo: libro.titulo,
+         autor: libro.autor,
+         editorial:libro.editorial,
+        paginas:libro.paginas
+    }})
+    .filter(libro=>{
+      return libro.paginas > 90
+    })
+    .sort((a,b )=> b.paginas-a.paginas);
+  //console.table(LibroMasPaginas)
 
 
 
 
-
-/*let pilaLibros = [];
+let pilaLibros = [];
 
 function agregarLibro() {
   let titulo = prompt("Ingrese el título del libro:");
@@ -584,6 +600,20 @@ function listarlibro() {
       Precio: libro.precio }; });
       console.log(librosListados);
 }
+function ResumenLibros() {
+  const LibroMasPaginas=libros.map(libro=>{
+    return {
+      titulo: libro.titulo,
+       autor: libro.autor,
+       editorial:libro.editorial,
+      paginas:libro.paginas
+  }})
+  .filter(libro=>{
+    return libro.paginas > 90
+  })
+  .sort((a,b )=> b.paginas-a.paginas);
+console.table(LibroMasPaginas)
+}
 
 
 
@@ -594,7 +624,8 @@ function mostrarMenu() {
     console.log("2. Mostrar libro");
     console.log("3. Quitar libro");
     console.log("4. Listar libro");
-    console.log("5. Salir");
+    console.log("5. Resumen libro");
+    console.log("6. Salir");
 }
 
 let opcion = 0;
@@ -616,13 +647,16 @@ do {
             case 4:
               listarlibro();
               break;
-        case 5:
+              case 5:
+                ResumenLibros();
+                break;
+        case 6:
             console.log("Saliendo del programa...");
             break;
         default:
             console.log("Opción no válida. Por favor, ingrese una opción válida.");
     }
-} while (opcion !== 5); 
+} while (opcion !== 6); 
 
 
-*/
+
