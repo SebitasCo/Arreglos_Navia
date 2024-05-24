@@ -553,6 +553,41 @@ const LibroMasPaginas=libros.map(libro=>{
 
  // console.table(LibroMayorAMenor);
 
+ const librosCaros = libros.filter(libro => libro.precio > 11)
+  .map(libro => ({
+    titulo: libro.titulo, 
+    autor: libro.autor, 
+    precio: libro.precio}));
+
+//console.log(librosCaros);
+
+const libromenor100p = libros.filter(libro => libro.paginas < 100)
+ .map(libro => ({
+  titulo: libro.titulo,
+   autor: libro.autor,
+    editorial: libro.editorial, 
+    paginas: libro.paginas}));
+
+//console.log(libromenor100p);
+
+const libropreciomayor20 = libros.filter(libro => libro.precio > 20)
+ .sort((a, b) => b.precio - a.precio)
+  .map(libro => ({
+    titulo: libro.titulo,
+     autor: libro.autor, 
+     precio: libro.precio}));
+
+//console.log(libropreciomayor20);
+
+const librosOrdenadosPorPaginas = libros.slice()
+.sort((a, b) => b.paginas - a.paginas)
+ .map(libro => ({
+  titulo: libro.titulo, 
+  autor: libro.autor,
+   editorial: libro.editorial, 
+   paginas: libro.paginas}));
+
+//console.log(librosOrdenadosPorPaginas);
 
 
 let pilaLibros = [];
