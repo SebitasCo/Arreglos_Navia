@@ -172,7 +172,7 @@ let libros = [
         autor: "J.R.R. Tolkien",
         genero: "Fantasía épica",
         idioma: "Inglés",
-        precio: 0, 
+        precio: 10, 
         formato: "Libro físico o digital",
         isbn: "Varía dependiendo de la edición",
         descripcion: "La segunda parte de la trilogía sigue las aventuras de los miembros de la Comunidad del Anillo tras la separación en la primera parte.",
@@ -196,7 +196,7 @@ let libros = [
         autor: "J.R.R. Tolkien",
         genero: "Fantasía épica",
         idioma: "Inglés",
-        precio: 0, 
+        precio: 21, 
         formato: "Libro físico o digital",
         isbn: "Varía dependiendo de la edición",
         descripcion: "La tercera parte de la trilogía narra la culminación de la guerra del Anillo y el destino de los personajes principales.",
@@ -220,7 +220,7 @@ let libros = [
         autor: "Mercedes Ron",
         genero: "Romance juvenil",
         idioma: "Español",
-        precio: 0, 
+        precio: 38, 
         formato: "Libro físico o digital",
         isbn: "Varía dependiendo de la edición",
         descripcion: "La primera parte de la trilogía narra la historia de Abril, una joven que se enamora de Aarón, un chico problemático con un pasado oscuro.",
@@ -244,7 +244,7 @@ let libros = [
         autor: "Mercedes Ron",
         genero: "Romance juvenil",
         idioma: "Español",
-        precio: 0, 
+        precio: 44, 
         formato: "Libro físico o digital",
         isbn: "Varía dependiendo de la edición",
         descripcion: "La segunda parte de la trilogía continúa la historia de Abril y Aarón, enfrentando nuevos desafíos y revelaciones sobre su relación.",
@@ -268,7 +268,7 @@ let libros = [
         autor: "Mercedes Ron",
         genero: "Romance juvenil",
         idioma: "Español",
-        precio: 0, 
+        precio: 33, 
         formato: "Libro físico o digital",
         isbn: "Varía dependiendo de la edición",
         descripcion: "La tercera parte de la trilogía concluye la historia de Abril y Aarón, mostrando cómo enfrentan su destino y sus sentimientos.",
@@ -293,7 +293,7 @@ let libros = [
         autor: "Suzanne Collins",
         genero: "Ciencia ficción, aventura",
         idioma: "Español",
-        precio: 0, 
+        precio: 51, 
         formato: "Libro físico o digital",
         isbn: "Varía dependiendo de la edición",
         descripcion: "En la secuela, Katniss y Peeta se enfrentan a la ira del Capitolio después de ganar los Juegos del Hambre.",
@@ -317,7 +317,7 @@ let libros = [
         autor: "Suzanne Collins",
         genero: "Ciencia ficción, aventura",
         idioma: "Español",
-        precio: 0, 
+        precio: 60, 
         formato: "Libro físico o digital",
         isbn: "Varía dependiendo de la edición",
         descripcion: "En la conclusión de la trilogía, Katniss se convierte en el símbolo de la rebelión contra el Capitolio.",
@@ -341,7 +341,7 @@ let libros = [
         autor: "Suzanne Collins",
         genero: "Ciencia ficción, aventura",
         idioma: "Español",
-        precio: 20, 
+        precio: 55, 
         formato: "Libro físico o digital",
         isbn: "Varía dependiendo de la edición",
         descripcion: "Precuela que narra la historia del presidente Snow y los primeros Juegos del Hambre.",
@@ -521,7 +521,17 @@ Descripcion: libro.descripcion }; });
     Idioma: libro.idioma,
     Editorial: libro.editorial, 
    Paginas: libro.paginas }; });
+
+   const librosConDescuento = libros.map(libro => ({
+    titulo: libro.titulo,
+    autor: libro.autor,
+    editorial: libro.editorial,
+    precio: libro.precio,
+    descuento: libro.precio * 0.2
+  }));
+   console.log(librosConDescuento);
    
+
 
 
 
@@ -572,7 +582,10 @@ function listarlibro() {
       Autor: libro.autor,
       Editorial: libro.editorial, 
       Precio: libro.precio }; });
+      console.log(librosListados);
 }
+
+
 
 
 function mostrarMenu() {
@@ -609,7 +622,7 @@ do {
         default:
             console.log("Opción no válida. Por favor, ingrese una opción válida.");
     }
-} while (opcion !== 4); */
+} while (opcion !== 5); 
 
 
-
+*/
