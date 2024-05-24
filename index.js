@@ -549,6 +549,9 @@ const LibroMasPaginas=libros.map(libro=>{
     .sort((a,b )=> b.paginas-a.paginas);
   //console.table(LibroMasPaginas)
 
+  const LibroMayorAMenor=libros.sort((a, b) => b.paginas - a.paginas);
+
+ // console.table(LibroMayorAMenor);
 
 
 
@@ -615,6 +618,12 @@ function ResumenLibros() {
 console.table(LibroMasPaginas)
 }
 
+function LosResumenesLibros() {
+  const LibroMayorAMenor=libros.sort((a, b) => b.paginas - a.paginas);
+
+  console.table(LibroMayorAMenor);
+}
+
 
 
 
@@ -625,7 +634,8 @@ function mostrarMenu() {
     console.log("3. Quitar libro");
     console.log("4. Listar libro");
     console.log("5. Resumen libro");
-    console.log("6. Salir");
+    console.log("6. Los Resumenes libro");
+    console.log("7. Salir");
 }
 
 let opcion = 0;
@@ -650,13 +660,16 @@ do {
               case 5:
                 ResumenLibros();
                 break;
-        case 6:
+                case 6:
+                  LosResumenesLibros();
+                  break;
+        case 7:
             console.log("Saliendo del programa...");
             break;
         default:
             console.log("Opción no válida. Por favor, ingrese una opción válida.");
     }
-} while (opcion !== 6); 
+} while (opcion !== 7); 
 
 
 
