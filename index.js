@@ -590,44 +590,40 @@ const librosOrdenadosPorPaginas = libros.slice()
 //console.log(librosOrdenadosPorPaginas);
 
 
-let pilaLibros = [];
+
 
 function agregarLibro() {
-  let titulo = prompt("Ingrese el título del libro:");
-  let autor = prompt("Ingrese el autor del libro:");
-  let genero = prompt("Ingrese el género del libro:");
-
-  let nuevoLibro = {
-      titulo: titulo,
-      autor: autor,
-      genero: genero
+  nuevoLibro={
+    titulo: prompt(" Ingrese el titulo del libro: "),
+    autor: prompt(" Ingrese el autor del libro:"),
+    genero: prompt("Ingrese el genero del libro:"),
+    idioma: prompt("Ingrese el idioma del libro:"),
+    precio: prompt("Ingrese el precio del libro:"),
+    formato: prompt("Ingrese el formato del libro:"),
+    isbn: prompt("Ingrese el isbn del libro:"),
+    descripcion: prompt("Ingrese la descripcion del libro:"),
+    estado: prompt("Ingrese el estado del libro: "),
+    ubicacion: prompt("Ingrese la ubicacion del libro: "),
+    fecha_publicacion: prompt("Ingrese la fecha de publicaion del libro: "),
+    editorial: prompt("Ingrese el editorial del libro: "),
+    paginas: prompt("Ingrese las paginas del libro: "),
+    dimensiones: prompt("Ingrese las dimensiones del libro: "), 
+    peso:prompt("Ingrese el peso del libro: ") 
+};
+libros.push(nuevoLibro)
+console.log(libros)
   };
 
-  pilaLibros.push(nuevoLibro);
-  console.log(`Se ha agregado el libro "${titulo}" a la pila.`);
-}
+
 
 function mostrarLibro() {
-  if (pilaLibros.length > 0) {
-    let libroAMostrar = pilaLibros[pilaLibros.length - 1]; 
-    console.log("Detalles del libro:");
-    console.log(`Título: ${libroAMostrar.titulo}`);
-    console.log(`Autor: ${libroAMostrar.autor}`);
-    console.log(`Género: ${libroAMostrar.genero}`);
-
-} else {
-    console.log("No hay libros para mostrar en la pila.");
-}
+  libros.forEach((libros,index) => console.log(libros.titulo+"\n" +(libros.autor)+"\n" +(libros.genero)+"\n" +(libros.idioma)+"\n" +(libros.precio)+"\n" +(libros.formato)+"\n" +(libros.isbn)+"\n" +(libros.descripcion)+"\n" +(libros.estado+"\n" +(libros.ubicacion)+"\n" +(libros.fechaDePublicacion)+"\n" +(libros.editorial)+"\n" +(libros.paginas)+"\n" +(libros.dimensiones)+"\n" )))
 }
 
 function quitarLibro() {
 
-    if (pilaLibros.length > 0) {
-      let libroQuitado = pilaLibros.pop();
-      console.log(`Se ha quitado el libro "${libroQuitado.titulo}" de la pila.`);
-  } else {
-      console.log("No hay libros para quitar en la pila.");
-  }
+libros.pop(libros)
+console.log(libros)
 }
 function listarlibro() {
   const librosListados = libros.map(libro => {
