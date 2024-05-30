@@ -529,7 +529,7 @@ Descripcion: libro.descripcion }; });
     precio: libro.precio,
     descuento: libro.precio * 0.2
   }));
-  // console.log(librosConDescuento);
+   //console.log(librosConDescuento);
    
   const librosMasCaros = libros.filter(libro => libro.precio > 50);
 
@@ -693,6 +693,16 @@ function LibrosOrdenadosPorPaginas() {
 
 console.log(librosOrdenadosPorPaginas);
 }
+function librosConDescuentos (){
+  const librosConDescuento = libros.map(libro => ({
+    titulo: libro.titulo,
+    autor: libro.autor,
+    editorial: libro.editorial,
+    precio: libro.precio,
+    descuento: libro.precio * 0.2
+  }));
+   console.log(librosConDescuento);
+}
 
 
 
@@ -706,11 +716,12 @@ console.log(librosOrdenadosPorPaginas);
   msj+=("4. Listar libro\n")
   msj+=("5. Resumen libro\n")
   msj+=("6. Los Resumenes libro\n")
-  msj+=("7. Libros mas caros\n")
-  msj+=("8. Libros menores de 100 paginas\n")
-  msj+=("9. Libros precio mayor a 20\n")
-  msj+=("10. Libros ordenados por paginas\n")
-  msj+=("11. Salir\n")
+  msj+=("7. Libros con descuento\n")
+  msj+=("8. Libros mas caros\n")
+  msj+=("9. Libros menores de 100 paginas\n")
+  msj+=("10. Libros precio mayor a 20\n")
+  msj+=("11. Libros ordenados por paginas\n")
+  msj+=("12. Salir\n")
 
 
 let opcion = 0;
@@ -738,24 +749,27 @@ do {
                   LosResumenesLibros();
                   break;
                   case 7:
+                    librosConDescuentos();
+                    break;
+                  case 8:
                     LibrosMasCaross();
                     break;
-                    case 8:
+                    case 9:
                       librospaginasmenor100();
                       break;
-                      case 9:
+                      case 10:
                         librospreciomayor20();
                         break;
-                        case 10:
+                        case 11:
                           LibrosOrdenadosPorPaginas();
                           break;
-        case 11:
+        case 12:
             console.log("Saliendo del programa...");
             break;
         default:
             console.log("Opción no válida. Por favor, ingrese una opción válida.");
     }
-} while (opcion !== 11); 
+} while (opcion !== 12); 
 
 
 
