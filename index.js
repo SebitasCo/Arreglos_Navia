@@ -738,7 +738,7 @@ do {
                   LosResumenesLibros();
                   break;
                   case 7:
-                    LibrosMasCaros();
+                    LibrosMasCaross();
                     break;
                     case 8:
                       librospaginasmenor100();
