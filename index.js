@@ -683,8 +683,7 @@ console.log(libropreciomayor20);
 }
 
 function LibrosOrdenadosPorPaginas() {
-  const librosOrdenadosPorPaginas = libros.slice()
-.sort((a, b) => b.paginas - a.paginas)
+  const librosOrdenadosPorPaginas = libros.sort((a, b) => b.paginas - a.paginas)
  .map(libro => ({
   titulo: libro.titulo, 
   autor: libro.autor,
@@ -724,7 +723,6 @@ function librosConDescuentos (){
   msj+=("12. Salir\n")
 
 
-let opcion = 0;
 
 do {
     opcion = parseInt(prompt(msj));
