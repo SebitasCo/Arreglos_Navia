@@ -655,6 +655,47 @@ function LosResumenesLibros() {
   console.table(LibroMayorAMenor);
 }
 
+function LibrosMasCaross () {
+  const librosMasCaros = libros.filter(libro => libro.precio > 50);
+  console.log(librosMasCaros);
+}
+
+function librospaginasmenor100() {
+  const libromenor100p = libros.filter(libro => libro.paginas < 100)
+  .map(libro => ({
+   titulo: libro.titulo,
+    autor: libro.autor,
+     editorial: libro.editorial, 
+     paginas: libro.paginas}));
+ 
+ console.log(libromenor100p);
+}
+
+function librospreciomayor20() {
+  const libropreciomayor20 = libros.filter(libro => libro.precio > 20)
+ .sort((a, b) => b.precio - a.precio)
+  .map(libro => ({
+    titulo: libro.titulo,
+     autor: libro.autor, 
+     precio: libro.precio}));
+
+console.log(libropreciomayor20);
+}
+
+function LibrosOrdenadosPorPaginas() {
+  const librosOrdenadosPorPaginas = libros.slice()
+.sort((a, b) => b.paginas - a.paginas)
+ .map(libro => ({
+  titulo: libro.titulo, 
+  autor: libro.autor,
+   editorial: libro.editorial, 
+   paginas: libro.paginas}));
+
+console.log(librosOrdenadosPorPaginas);
+}
+
+
+
 
 
 
@@ -665,7 +706,11 @@ function LosResumenesLibros() {
   msj+=("4. Listar libro\n")
   msj+=("5. Resumen libro\n")
   msj+=("6. Los Resumenes libro\n")
-  msj+=("7. Salir\n")
+  msj+=("7. Libros mas caros\n")
+  msj+=("8. Libros menores de 100 paginas\n")
+  msj+=("9. Libros precio mayor a 20\n")
+  msj+=("10. Libros ordenados por paginas\n")
+  msj+=("11. Salir\n")
 
 
 let opcion = 0;
@@ -692,13 +737,25 @@ do {
                 case 6:
                   LosResumenesLibros();
                   break;
-        case 7:
+                  case 7:
+                    LibrosMasCaros();
+                    break;
+                    case 8:
+                      librospaginasmenor100();
+                      break;
+                      case 9:
+                        librospreciomayor20();
+                        break;
+                        case 10:
+                          LibrosOrdenadosPorPaginas();
+                          break;
+        case 11:
             console.log("Saliendo del programa...");
             break;
         default:
             console.log("Opción no válida. Por favor, ingrese una opción válida.");
     }
-} while (opcion !== 7); 
+} while (opcion !== 11); 
 
 
 
