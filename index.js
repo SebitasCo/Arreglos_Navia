@@ -662,22 +662,20 @@ function LosResumenesLibros() {
 
 
 
-function mostrarMenu() {
-    console.log("----- Menú de Libros -----");
-    console.log("1. Agregar libro");
-    console.log("2. Mostrar libro");
-    console.log("3. Quitar libro");
-    console.log("4. Listar libro");
-    console.log("5. Resumen libro");
-    console.log("6. Los Resumenes libro");
-    console.log("7. Salir");
-}
+  let  msj=("----- Menú de Libros -----\n")
+  msj+=("1. Agregar libro\n")
+  msj+=("2. Mostrar libro\n")
+  msj+=("3. Quitar libro\n")
+  msj+=("4. Listar libro\n")
+  msj+=("5. Resumen libro\n")
+  msj+=("6. Los Resumenes libro\n")
+  msj+=("7. Salir\n")
+
 
 let opcion = 0;
 
 do {
-    mostrarMenu();
-    opcion = parseInt(prompt("Ingrese una opción:"));
+    opcion = parseInt(prompt(msj));
 
     switch (opcion) {
         case 1:
