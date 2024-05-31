@@ -13,15 +13,8 @@ let libros = [
       fecha_publicacion: "06/04/1943",
       editorial: "Gallimard",
       paginas: 96,
-      dimensiones: {
-        ancho: 12,
-        profundidad: 1,
-        altura: 18
-      },
-      peso: {
-        valor: 150,
-        unidad: "gramos"
-      }
+      dimensiones: "5.1 x 1 x 7.8 pulgadas",
+      peso: "11.2 onzas"
     },
     {
       titulo: "Cien años de soledad",
@@ -37,15 +30,8 @@ let libros = [
       fecha_publicacion: "30/05/1967",
       editorial: "Gallimard",
       paginas: 432,
-      dimensiones: {
-        ancho: 15,
-        profundidad: 3,
-        altura: 22
-      },
-      peso: {
-        valor: 300,
-        unidad: "gramos"
-      }
+      dimensiones: "5.1 x 1 x 7.8 pulgadas",
+      peso: "11.2 onzas"
     },
     {
       titulo: "La Biblia",
@@ -61,15 +47,8 @@ let libros = [
       fecha_publicacion: "Siglos antes de Cristo (para el Antiguo Testamento) y siglo I (para el Nuevo Testamento)",
       editorial: "Gallimard",
       paginas:234,
-      dimensiones: {
-        ancho: "Varía",
-        profundidad: "Varía",
-        altura: "Varía"
-      },
-      peso: {
-        valor: "Varía",
-        unidad: "gramos o kilogramos"
-      }
+      dimensiones: "5.1 x 1 x 7.8 pulgadas",
+      peso: "11.2 onzas"
       },
       {
         titulo: "La Odisea",
@@ -85,15 +64,8 @@ let libros = [
         fecha_publicacion: "Siglo VIII a.C.",
         editorial: "Gallimard",
         paginas:760,
-        dimensiones: {
-          ancho: "Varía",
-          profundidad: "Varía",
-          altura: "Varía"
-        },
-        peso: {
-          valor: "Varía",
-          unidad: "gramos o kilogramos"
-        }
+        dimensiones: "5.1 x 1 x 7.8 pulgadas",
+        peso: "11.2 onzas"
       },
       {
         titulo: "Don Quijote de la Mancha",
@@ -109,15 +81,8 @@ let libros = [
         fecha_publicacion: "1605 y 1615",
         editorial: "Gallimard",
         paginas:468,
-        dimensiones: {
-          ancho: "Varía",
-          profundidad: "Varía",
-          altura: "Varía"
-        },
-        peso: {
-          valor: "Varía",
-          unidad: "gramos o kilogramos"
-        }
+        dimensiones: "5.1 x 1 x 7.8 pulgadas",
+        peso: "11.2 onzas"
       },
       {
         titulo: "Historia de dos ciudades",
@@ -133,15 +98,8 @@ let libros = [
         fecha_publicacion: "1859",
         editorial: "Sudamericana",
         paginas:100,
-        dimensiones: {
-          ancho: "Varía",
-          profundidad: "Varía",
-          altura: "Varía"
-        },
-        peso: {
-          valor: "Varía",
-          unidad: "gramos o kilogramos"
-        }
+        dimensiones: "5.1 x 1 x 7.8 pulgadas",
+        peso: "11.2 onzas"
       },
       {
         titulo: "La Comunidad del Anillo",
@@ -157,15 +115,8 @@ let libros = [
         fecha_publicacion: "1954",
         editorial: "Sudamericana",
         paginas:723,
-        dimensiones: {
-          ancho: "Varía",
-          profundidad: "Varía",
-          altura: "Varía"
-        },
-        peso: {
-          valor: "Varía",
-          unidad: "gramos o kilogramos"
-        }
+        dimensiones: "5.1 x 1 x 7.8 pulgadas",
+        peso: "11.2 onzas"
       },
       {
         titulo: "Las Dos Torres",
@@ -181,15 +132,8 @@ let libros = [
         fecha_publicacion: "1954",
         editorial: "Sudamericana",
         paginas:418,
-        dimensiones: {
-          ancho: "Varía",
-          profundidad: "Varía",
-          altura: "Varía"
-        },
-        peso: {
-          valor: "Varía",
-          unidad: "gramos o kilogramos"
-        }
+        dimensiones: "5.1 x 1 x 7.8 pulgadas",
+        peso: "11.2 onzas"
       },
       {
         titulo: "El Retorno del Rey",
@@ -205,15 +149,8 @@ let libros = [
         fecha_publicacion: "1955",
         editorial: "Sudamericana",
         paginas:325,
-        dimensiones: {
-          ancho: "Varía",
-          profundidad: "Varía",
-          altura: "Varía"
-        },
-        peso: {
-          valor: "Varía",
-          unidad: "gramos o kilogramos"
-        }
+        dimensiones: "5.1 x 1 x 7.8 pulgadas",
+        peso: "11.2 onzas"
       },
       {
         titulo: "Culpa Mía",
@@ -229,15 +166,8 @@ let libros = [
         fecha_publicacion: "2016",
         editorial: "Sudamericana",
         paginas:123,
-        dimensiones: {
-          ancho: "Varía",
-          profundidad: "Varía",
-          altura: "Varía"
-        },
-        peso: {
-          valor: "Varía",
-          unidad: "gramos o kilogramos"
-        }
+        dimensiones: "5.1 x 1 x 7.8 pulgadas",
+        peso: "11.2 onzas"
       },
       {
         titulo: "Culpa Tuya",
@@ -253,15 +183,8 @@ let libros = [
         fecha_publicacion: "2016",
         editorial: "Montena",
         paginas:453,
-        dimensiones: {
-          ancho: "Varía",
-          profundidad: "Varía",
-          altura: "Varía"
-        },
-        peso: {
-          valor: "Varía",
-          unidad: "gramos o kilogramos"
-        }
+        dimensiones: "5.1 x 1 x 7.8 pulgadas",
+        peso: "11.2 onzas"
       },
       {
         titulo: "Culpa Nuestra",
@@ -277,15 +200,8 @@ let libros = [
         fecha_publicacion: "2017",
         editorial: "Montena",
         paginas:987,
-        dimensiones: {
-          ancho: "Varía",
-          profundidad: "Varía",
-          altura: "Varía"
-        },
-        peso: {
-          valor: "Varía",
-          unidad: "gramos o kilogramos"
-        }
+        dimensiones: "5.1 x 1 x 7.8 pulgadas",
+        peso: "11.2 onzas"
       },
                                                                                  
       {
@@ -302,15 +218,8 @@ let libros = [
         fecha_publicacion: "2009",
         editorial: "Montena",
         paginas:631,
-        dimensiones: {
-          ancho: "Varía",
-          profundidad: "Varía",
-          altura: "Varía"
-        },
-        peso: {
-          valor: "Varía",
-          unidad: "gramos o kilogramos"
-        }
+        dimensiones: "5.1 x 1 x 7.8 pulgadas",
+        peso: "11.2 onzas"
       },
       {
         titulo: "Sinsajo",
@@ -326,15 +235,8 @@ let libros = [
         fecha_publicacion: "2010",
         editorial: "Montena",
         paginas:567,
-        dimensiones: {
-          ancho: "Varía",
-          profundidad: "Varía",
-          altura: "Varía"
-        },
-        peso: {
-          valor: "Varía",
-          unidad: "gramos o kilogramos"
-        }
+        dimensiones: "5.1 x 1 x 7.8 pulgadas",
+        peso: "11.2 onzas"
       },
       {
         titulo: "Balada de pájaros cantores y serpientes",
@@ -350,15 +252,8 @@ let libros = [
         fecha_publicacion: "2020",
         editorial: "Montena",
         paginas:320,
-        dimensiones: {
-          ancho: "Varía",
-          profundidad: "Varía",
-          altura: "Varía"
-        },
-        peso: {
-          valor: "Varía",
-          unidad: "gramos o kilogramos"
-        }
+        dimensiones: "5.1 x 1 x 7.8 pulgadas",
+        peso: "11.2 onzas"
       },
       {
         titulo: "Heartstopper Vol. 1",
@@ -589,7 +484,65 @@ const librosOrdenadosPorPaginas = libros.slice()
 
 //console.log(librosOrdenadosPorPaginas);
 
+const LibroBuscadoPorTitulo = libros.find(
+  libro => libro.titulo ==="Sinsajo");
+ // console.table(LibroBuscadoPorTitulo);
 
+ const LibroBuscadoPorAutor = libros.find(
+  libro => libro.autor ==="Alice Oseman");
+ // console.table(LibroBuscadoPorAutor);
+
+  const LibroBuscadoPorFechaPublicacion = libros.find(
+    libro => libro.fecha_publicacion ==="2021");
+   // console.table(LibroBuscadoPorFechaPublicacion); 
+
+ const LibroBuscadoPorGenero = libros.find(
+  libro => libro.genero ==="Novela gráfica, Romance LGBT+");
+ // console.table(LibroBuscadoPorGenero); 
+
+  const LibroBuscadoPorIdioma = libros.find(
+  libro => libro.idioma ==="Español");
+ // console.table(LibroBuscadoPorIdioma); 
+  
+  const LibroBuscadoPorEditorial = libros.find(
+  libro => libro.editorial ==="Planeta");
+ // console.table(LibroBuscadoPorEditorial);
+  
+  const LibroBuscadoPorPaginas = libros.find(
+  libro => libro.paginas ===100);
+  //console.table(LibroBuscadoPorPaginas); 
+  
+  const LibroBuscadoPorDimensiones = libros.find(
+  libro => libro.dimensiones ==="10x10");
+  //console.table(LibroBuscadoPorDimensiones);
+  
+  const LibroBuscadoPorPeso = libros.find(
+  libro => libro.peso ===10);
+  //console.table(LibroBuscadoPorPeso); 
+  
+  const LibroBuscadoPorEstado = libros.find(
+  libro => libro.estado ==="Nuevo");
+  //console.table(LibroBuscadoPorEstado); 
+  
+  const LibroBuscadoPorUbicacion = libros.find(
+  libro => libro.ubicacion ==="Casa");
+  //console.table(LibroBuscadoPorUbicacion); 
+  
+  const LibroBuscadoPorFormato = libros.find(
+  libro => libro.formato ==="Digital");
+  //console.table(LibroBuscadoPorFormato);
+  const LibroBuscadoPorPrecio = libros.find(
+  libro => libro.precio ===55);
+  //console.table(LibroBuscadoPorPrecio); 
+  
+  const LibroBuscadoPorDescripcion = libros.find(
+  libro => libro.descripcion ==="Novela gráfica, Romance LGBT+");
+  //console.table(LibroBuscadoPorDescripcion); 
+  
+  const LibroBuscadoPorIsbn = libros.find(
+  libro => libro.isbn ==="123456789");
+  //console.table(LibroBuscadoPorIsbn); 
+  
 
 
 function agregarLibro() {
@@ -703,6 +656,112 @@ function librosConDescuentos (){
    console.log(librosConDescuento);
 }
 
+function  LibrosBuscadoPorTitulo (){
+  const tituloBuscado = prompt("Introduce el título del libro que deseas buscar:");
+   const libroBuscado = libros.find(libro => libro.titulo == tituloBuscado);
+
+if (libroBuscado) { console.log("Libro encontrado:");
+ console.log(libroBuscado); 
+}
+  else {
+     console.log("Libro no encontrado");
+     }
+}
+
+function  LibrosBuscadoPorAutor (){
+  const autorBuscado = prompt("Introduce el título del libro que deseas buscar:");
+   const libroBuscado = libros.find(libro => libro.autor == autorBuscado);
+
+if (libroBuscado) { console.log("Libro encontrado:");
+ console.log(libroBuscado); 
+}
+  else {
+     console.log("Libro no encontrado");
+     }
+}
+
+function  LibrosBuscadoPorFechaDePublicacion (){
+  const fechaDePublicacionBuscado = prompt("Introduce el título del libro que deseas buscar:");
+   const libroBuscado = libros.find(libro => libro.fecha_publicacion == fechaDePublicacionBuscado);
+
+   if (libroBuscado) { console.log("Libro encontrado:");
+ console.log(libroBuscado); 
+}
+  else {
+     console.log("Libro no encontrado");
+     }
+}
+
+function  LibrosBuscadoPorGenero () {
+  const generoBuscado = prompt("Introduce el título del libro que deseas buscar:");
+   const libroBuscado = libros.find(libro => libro.genero == generoBuscado);
+
+   if (libroBuscado) { console.log("Libro encontrado:");
+   console.log(libroBuscado); 
+  }
+    else {
+       console.log("Libro no encontrado");
+       }
+
+}
+
+function  LibrosBuscadoPorIdioma () {
+  const idiomaBuscado = prompt("Introduce el título del libro que deseas buscar:");
+   const libroBuscado = libros.find(libro => libro.idioma == idiomaBuscado);
+
+   if (libroBuscado) { console.log("Libro encontrado:");
+   console.log(libroBuscado); 
+  }
+    else {
+       console.log("Libro no encontrado");
+       }
+  }
+
+
+  function diezIteraciones() {
+    const LibroBuscadoPorEditorial = libros.find(
+      libro => libro.editorial ==="Sudamericana");
+     console.table(LibroBuscadoPorEditorial);
+      
+      const LibroBuscadoPorPaginas = libros.find(
+      libro => libro.paginas ===100);
+      console.table(LibroBuscadoPorPaginas); 
+      
+      const LibroBuscadoPorDimensiones = libros.find(
+      libro => libro.dimensiones ==="5.1 x 0.9 x 7.8 pulgadas");
+      console.table(LibroBuscadoPorDimensiones);
+      
+      const LibroBuscadoPorPeso = libros.find(
+      libro => libro.peso ==="12.8 onzas");
+      console.table(LibroBuscadoPorPeso); 
+      
+      const LibroBuscadoPorEstado = libros.find(
+      libro => libro.estado ==="Nuevo");
+      console.table(LibroBuscadoPorEstado); 
+      
+      const LibroBuscadoPorUbicacion = libros.find(
+      libro => libro.ubicacion ==="Librerías");
+      console.table(LibroBuscadoPorUbicacion); 
+      
+      const LibroBuscadoPorFormato = libros.find(
+      libro => libro.formato ==="Libro físico o digital");
+      console.table(LibroBuscadoPorFormato);
+      const LibroBuscadoPorPrecio = libros.find(
+      libro => libro.precio ===55);
+      console.table(LibroBuscadoPorPrecio); 
+      
+      const LibroBuscadoPorDescripcion = libros.find(
+      libro => libro.descripcion ==="La tercera parte de la trilogía narra la culminación de la guerra del Anillo y el destino de los personajes principales.");
+      console.table(LibroBuscadoPorDescripcion); 
+      
+      const LibroBuscadoPorIsbn = libros.find(
+      libro => libro.isbn ==="978-84-376-0494-7");
+      console.table(LibroBuscadoPorIsbn); 
+      
+  }
+
+
+
 
 
 
@@ -720,7 +779,18 @@ function librosConDescuentos (){
   msj+=("9. Libros menores de 100 paginas\n")
   msj+=("10. Libros precio mayor a 20\n")
   msj+=("11. Libros ordenados por paginas\n")
-  msj+=("12. Salir\n")
+  msj+=("12. Menú de Find\n")
+  msj+=("13. Salir\n")
+
+  
+  let  msj2=("----- Menú de Find -----\n")
+  msj2+=("1. Buscar un objeto del array por titulo.\n")
+  msj2+=("2. Buscar un objeto del array por autor.\n")
+  msj2+=("3. Buscar un objeto del array por fecha de publicación.\n")
+  msj2+=("4. Buscar un objeto del array por genero.\n")
+  msj2+=("5. Buscar un objeto del array por idioma.\n")
+  msj2+=("6. 10 iteraciones\n")
+  msj2+=("7. Salir\n")
 
 
 
@@ -761,13 +831,36 @@ do {
                         case 11:
                           LibrosOrdenadosPorPaginas();
                           break;
-        case 12:
+                          case 12:
+               opcionfind= parseInt(prompt(msj2)); 
+                switch (opcionfind) {
+                  case 1:
+                    LibrosBuscadoPorTitulo();
+                    break;
+                  case 2:
+                    LibrosBuscadoPorAutor();
+                    break;
+                  case 3:
+                    LibrosBuscadoPorFechaDePublicacion();
+                    break;
+                    case 4:
+                      LibrosBuscadoPorGenero();
+                      break;
+                      case 5:
+                        LibrosBuscadoPorIdioma();
+                        break;
+                        case 6:
+                          diezIteraciones();
+                          break;
+                }
+                            break;
+        case 13:
             console.log("Saliendo del programa...");
             break;
         default:
             console.log("Opción no válida. Por favor, ingrese una opción válida.");
     }
-} while (opcion !== 12); 
+} while (opcion !== 13); 
 
 
 
