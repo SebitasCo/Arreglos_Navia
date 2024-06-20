@@ -205,7 +205,7 @@ let libros = [
       },
                                                                                  
       {
-        titulo: "En Llamas",
+        titulo: "Sinsajo",
         autor: "Suzanne Collins",
         genero: "Ciencia ficción, aventura",
         idioma: "Español",
